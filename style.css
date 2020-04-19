@@ -1,0 +1,174 @@
+/* CSS stylesheet for samfritz.github.io */
+
+/* Style tab menu and links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#INFO-6620 {background-color: red;}
+#Thing1 {background-color: green;}
+#Thing2 {background-color: blue;}
+#Thing3 {background-color: orange;}
+</style>
+</head>
+
+
+/* Set height of body and the document to 100%; page header and other header formatting */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  margin: 0;
+  height: 100%;
+}
+
+.header {
+  font-size: 60px;
+  font-family: cursive
+  border: 2px solid white;
+  padding: 40px;
+  text-align: center;
+  background: #ABC7B1;
+  color: #5D7A63;
+}
+
+.h2{
+  font-size: large;
+  font:bold;
+}
+.h3{
+  font-size: x-small;
+  font: italic;
+  text-align: right;
+}
+
+.h4{
+  font-size: medium;
+  font: bold;
+}
+
+/* Image in side panel */
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.image {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  height:200px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.table{
+  text-align: left;
+  line-height: normal;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  vertical-align: center;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ABC7B1;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+
+  /* Add font awesome icons */
+
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+/* Adds CSS stylesheet */
+
+<style>
+.fa {
+  font-size: 30px;
+  padding: 20px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
