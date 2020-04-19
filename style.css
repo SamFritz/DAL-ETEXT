@@ -14,7 +14,7 @@
 }
 
 .tablink:hover {
-  background-color: #404040;
+  background-color: white;
   font-color: #5D7A63;
 }
 
@@ -24,7 +24,6 @@
 #Thing3 {background-color: white;}
 </style>
 </head>
-
 
 /* Set height of body and the document to 100%; page header and other header formatting */
 
@@ -88,9 +87,10 @@ body {
   color: #404040;
 }
 
-.ul li{
+.li{
   content: "\00BB";
 }
+
 /* Footer */
 .footer {
   padding: 20px;
