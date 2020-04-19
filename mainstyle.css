@@ -9,9 +9,9 @@
 
 <style>
 .fa {
-  padding: 20px;
   font-size: 30px;
-  width: 50px;
+  padding: 20px;
+  width: 150px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -43,7 +43,19 @@
 /* Style the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
   margin: 0;
+}
+
+
+.minip{
+  font-size: small;
+  font: italic;
+}
+
+.ul{
+  list-style: none;
+  content: "\00BB \0020"
 }
 
 /* Header/logo Title */
