@@ -11,8 +11,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
+<style>
+* {box-sizing: border-box}
 
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
 
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#INFO-6620 {background-color: red;}
+#Thing1 {background-color: green;}
+#Thing2 {background-color: blue;}
+#Thing3 {background-color: orange;}
+</style>
+</head>
 <body>
 
 <div class="header">
@@ -21,7 +60,15 @@
 </div>
 
 
-<div class="row">
+<button class="tablink" onclick="openPage('INFO-6620', this, 'red')">INFO 6620</button>
+<button class="tablink" onclick="openPage('Thing1', this, 'green')" id="defaultOpen">Thing1</button>
+<button class="tablink" onclick="openPage('Thing2', this, 'blue')">Thing2</button>
+<button class="tablink" onclick="openPage('Thing3', this, 'orange')">Thing3</button>
+
+
+<div id="INFO-6620" class="tabcontent">
+  <h3>Course content</h3>
+  <div class="row">
   <div class="side">
     <div class="image" style="height:200px;">
         <a href="/samfritz.github.io/SamFritz.jpg"></a>
@@ -30,24 +77,25 @@
   
   <div class="main">
   <h2>Contents</h2>
+  <h3>INFO 6620</h3>
   <p>During the course of my time at the School of Information Management at Dalhousie University, I participated in INFO 6620: Elextronic Text Design. Here are some of the projects that came out of that course, demonstrating basic concepts of HTML and CSS design.</p>
   <ul>
-    <li><p class="minip"><a href="https://www.yumpu.com/en/document/read/33597521/info-6620-electronic-text-design-course-outline-faculty-of-">Previous INFO 6620 syllabus available.</a></p></li>
+    <li><h5><a href="https://www.yumpu.com/en/document/read/33597521/info-6620-electronic-text-design-course-outline-faculty-of-">Previous INFO 6620 syllabus available.</a></h5></li>
   </ul>
 
   <br>
 
   <table class="table" style="width:100%">
     <tr>
-      <td><a href="#">Typography</a></td>
-      <td>HTML Essay - designed to demonstrate xhtml and CSS skills and the ability to create a functional attractive, and accesible design for the content of your essay.</td> 
+      <td><h4><a href="#">Typography</a><h4></td>
+      <td><h4>HTML Essay</h4><br/><br/>Designed to demonstrate xhtml and CSS skills and the ability to create a functional attractive, and accesible design for the content of your essay.</td> 
     </tr>
     <tr>
-      <th><a href="/samfritz.github.io/alice.xml">Alice Exerpt</a></th>
+      <th><a href="/samfritz.github.io/alice.xml"><h4>Alice Exerpt</h4></a></th>
       <th>TEI XML Project - this project was designed to give participants experience in the application of the TEI XML encoding. The requirement of this project was to encode a document which was provided with TEI XML tags to ain an understanding of the principles and goals of text encoding and specifically of text encoding for the humanities.</th> 
     </tr>
      <tr>
-      <td><a href="#">Datatbase</a></td>
+      <td><a href="#"><h4>Datatbase</h4></a></td>
       <td>Book List - the goal was to create a database type document, where data is complex enough to offer an opportunity for different display options and opportunies.</td> 
     </tr>
   
@@ -62,5 +110,50 @@
 <a href="https://www.linkedin.com/in/samvfritz/"><div class="fa fa-linkedin"></div></a>
 <a href="https://www.instagram.com/samvfritz/"><div class="fa fa-instagram"></div></a>
 </div>
-</body>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div id="News" class="tabcontent">
+  <h3>Thing1</h3>
+  <p>When I have other portfolio project</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Thing2</h3>
+  <p>And then other things</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>Thing1</h3>
+  <p>And finally more things can go here.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
 </html>
