@@ -54,7 +54,7 @@ body {
 
 /* Header/logo Title */
 .header {
-  border: 5px solid white;
+  border: 2px solid white;
   padding: 40px;
   text-align: center;
   background: #ABC7B1;
@@ -127,7 +127,6 @@ body {
   padding: 20px;
 }
 
-
 .table{
   text-align: left;
   line-height: normal;
@@ -137,7 +136,6 @@ body {
   padding: 8px;
   vertical-align: center;
 }
-
 
 /* Fake image, just for this example */
 .image {
