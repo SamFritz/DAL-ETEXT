@@ -3,10 +3,10 @@
 /* Style tab menu and links */
 .tablink {
   background-color: #5D7A63;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
+  font-color: white;
+  float: center;
+  border: 1px;
+  outline: 1px;
   cursor: pointer;
   padding: 14px 16px;
   font-size: 17px;
@@ -15,11 +15,12 @@
 
 .tablink:hover {
   background-color: #404040;
+  font-color: #5D7A63;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
-  color: white;
+  font-color: #404040;
   display: none;
   padding: 100px 20px;
   height: 100%;
@@ -48,13 +49,13 @@ body {
   padding: 40px;
   text-align: center;
   background: #ABC7B1;
-  color: #5D7A63;
+  font-color: #5D7A63;
 }
 
 .p{
   font-family: Helvetica, sans-serif;
   font-size: 20px;
-  color: #404040;
+  font-color: #404040;
 }
 
 .h1{
@@ -78,13 +79,10 @@ body {
   color: #404040;
 }
 
-.image {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-  border-radius: 5px;
-  height:200px;
+.ul li{
+  content: "\00BB";
 }
+
 
 /* Main column */
 .main {   
