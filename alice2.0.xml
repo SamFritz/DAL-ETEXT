@@ -9,19 +9,20 @@
 <meta name="DC.Title" content="An extract from Alice in Wonderland"/>
 
 <meta name="DC.Format" content="text/html"/>
-<link href="stylesheets/alice.css" rel="stylesheet" type="text/css"/>
+<link href="alicestyle.css" rel="stylesheet" type="text/css"/>
 <link rel="stylesheet" media="print" type="text/css" href="alicestyle.css"/>
 
 </head>
-<body class="simple" id="TOP"><div class="stdheader">
+<body class="body" id="TOP">
+	<div class="stdheader">
 	<h2 class="institution">A INFO6620 Project</h2>
 	<h1 class="maintitle">An extract from <span style="font-style: italic">Alice in Wonderland</span></h1></div>
 	<h2>Table of contents</h2>
 		<ul class="toc toc_body">
-		<li class="toc"><span class="headingNumber">1. </span><a class="toc toc_0" href="#index.xml-body.1_div.1">A Poem</a></li>
-		<li class="toc"><span class="headingNumber">2. </span><a class="toc toc_0" href="#index.xml-body.1_div.2">Christmas-Greetings</a>
-		</li><li class="toc"><span class="headingNumber">3. </span><a class="toc toc_0" href="#index.xml-body.1_div.3">Chapter 1: Down the Rabbit Hole</a>
-		</li><li class="toc"><span class="headingNumber">4. </span><a class="toc toc_0" href="#index.xml-body.1_div.4">References</a></li></ul>
+		<li class="toc"><span class="headingNumber">1.</span><a class="toc toc_0" href="#index.xml-body.1_div.1">A Poem</a></li>
+		<li class="toc"><span class="headingNumber">2.</span><a class="toc toc_0" href="#index.xml-body.1_div.2">Christmas-Greetings</a>
+		</li><li class="toc"><span class="headingNumber">3.</span><a class="toc toc_0" href="#index.xml-body.1_div.3">Chapter 1: Down the Rabbit Hole</a>
+		</li><li class="toc"><span class="headingNumber">4.</span><a class="toc toc_0" href="#index.xml-body.1_div.4">References</a></li></ul>
 	
 	<div class="poem1" id="index.xml-body.1_div.1">
 	<h2><span class="headingNumber">1. </span>
