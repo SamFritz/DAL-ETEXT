@@ -1,2 +1,2 @@
-# samfritz.github.io
+# DAL ETEXT
 Personal Website
